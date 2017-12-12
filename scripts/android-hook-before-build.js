@@ -61,7 +61,7 @@ module.exports = function(context) {
 				i+i+i+'case ComponentCallbacks2.TRIM_MEMORY_BACKGROUND:',
 				i+i+i+'case ComponentCallbacks2.TRIM_MEMORY_MODERATE:',
 				i+i+i+'case ComponentCallbacks2.TRIM_MEMORY_COMPLETE:',
-				i+i+i+i+'this.appView.loadUrl("javascript:cordova.fireDocumentEvent(\'memorywarning\', level);");',
+				i+i+i+i+'this.appView.loadUrl("javascript:cordova.fireDocumentEvent(\'memorywarning\', " + level + ");");',
 				i+i+i+i+'break;',
 				i+i+'}',
 				i+'}',
